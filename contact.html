@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi's Purr-fect Pink Blog | Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">🐾 Mochi's Pink Blog</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="contact-wrapper">
+            <div class="card contact-card">
+                <h1>Send Fan Mail & Treats 💌</h1>
+                <p>Want to collaborate, send virtual chin scratches, or ask Mochi for lifestyle advice? Drop a message below!</p>
+
+                <form id="contact-form">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required placeholder="Jane Doe">
+
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" required placeholder="jane@example.com">
+
+                    <label for="subject">Topic</label>
+                    <select id="subject">
+                        <option value="Fan Mail">Fan Mail for Mochi</option>
+                        <option value="Treat Sponsorship">Treat Sponsorship</option>
+                        <option value="Question">General Question</option>
+                    </select>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" required placeholder="Write your message here..."></textarea>
+
+                    <button type="submit" class="btn-primary">Send Purr-mail</button>
+                </form>
+
+                <div id="form-success" class="success-banner hidden">
+                    🎉 Thank you! Mochi has received your message and responded with a slow blink.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with 💖 and catnip for Mochi &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

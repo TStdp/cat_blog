@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi's Purr-fect Pink Blog | Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">🐾 Mochi's Pink Blog</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">☰</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Mochi's World! 🌸</h1>
+                <p>Daily adventures, professional napping reviews, and treat connoisseurship in pastel pink.</p>
+                <div class="treat-box">
+                    <button id="treat-btn" class="btn-primary">🐟 Give Mochi a Treat</button>
+                    <p class="treat-count">Treats given today: <span id="treat-counter">14</span></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section container">
+            <div class="section-header">
+                <h2>Latest Purr-nal Entries</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="Naps">Naps</button>
+                    <button class="filter-btn" data-filter="Treats">Treats</button>
+                    <button class="filter-btn" data-filter="Zoomies">Zoomies</button>
+                    <button id="open-modal-btn" class="btn-secondary">+ Write Entry</button>
+                </div>
+            </div>
+
+            <div class="blog-grid" id="blog-grid">
+                <!-- Posts injected via script.js -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for New Entry -->
+    <div id="post-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-modal" id="close-modal">&times;</span>
+            <h2>Write a New Cat Entry ✍️</h2>
+            <form id="new-post-form">
+                <label for="post-title">Entry Title</label>
+                <input type="text" id="post-title" required placeholder="e.g., The Red Dot Escape">
+
+                <label for="post-category">Category</label>
+                <select id="post-category">
+                    <option value="Naps">Naps</option>
+                    <option value="Treats">Treats</option>
+                    <option value="Zoomies">Zoomies</option>
+                </select>
+
+                <label for="post-content">Story</label>
+                <textarea id="post-content" rows="4" required placeholder="Tell everyone what Mochi did today..."></textarea>
+
+                <button type="submit" class="btn-primary">Publish Post</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made with 💖 and catnip for Mochi &copy; 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
